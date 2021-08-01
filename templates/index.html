@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Classification</title>
+</head>
+
+<body style="background: #bf5b4b">
+<div align="center" style="background-color: #edb386 ;text-align: center;padding: 15px;position: absolute;top: 20%;left: 33%;bottom: 20%;right: 33%">
+<h1>Iris Classification</h1>
+    <h4>using Machine Learning, Flask and Azure</h4>
+    <form action="#" method="post">
+    <p id="slengthp">Sepal Length : <input id="slengthi" name="slengthin" type="text"></p>
+    <p id="swidthp">Sepal Width : <input id="swidthi" name="swidthin" type="text"></p>
+    <p id ="plengthp">Petal Length : <input id="plengthi" name="plengthin" type="text"></p>
+    <p id ="pwidthp">Petal Width : <input id="pwidthi" name="pwidthin" type="text"></p>
+    <p><input type="submit" value="Predict" ></p>
+    </form>
+    <p>Predicted Value and its accuracy are:</p>
+    <p id="result">{{ Predicted_flower_name }}, {{ Accuracy_of_prediction }}</p>
+</div>
+</body>
+</html>
