@@ -28,3 +28,14 @@ Hello everyone, this is a machine learning model deployment project where we hav
 `pip install -r requirements.txt`
 7. launch the flask server using command:
 `flask run`
+
+## Screenshots of deployed project
+
+![image](https://user-images.githubusercontent.com/5558263/131238779-ae486149-b8db-4589-9cbd-d32d701c1b7e.png)
+
+![image](https://user-images.githubusercontent.com/5558263/131238803-116e3dbe-be21-4e5d-b24f-1ff1eb404c28.png)
+
+![image](https://user-images.githubusercontent.com/5558263/131238809-20b07798-3d77-4c15-9e2f-8c021c23dab9.png)
+
+## Steps to Deploy in Azure App Service
+To be updated soon...
