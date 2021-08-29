@@ -14,4 +14,17 @@ Hello everyone, this is a machine learning model deployment project where we hav
   
   ## Step by step guide to run, contribute, test in local machine.
 
-clone this repo into desired location in your system.
+1. clone this repo into desired location in your system using command:
+ `git clone https://github.com/kittupriyatham/Machine-Learning-Model-Deployment.git`
+2. Go to the project folder using command:
+`cd Machine-Learning-Model-Deployment`
+3. Initialize local repository using command:
+`git init`
+4. create a python virtual environment using command:
+`python -m venv venv`
+5. activate the virtual environment using command:
+`venv\Scripts\activate`
+6.  Install the project dependancies using command:
+`pip install -r requirements.txt`
+7. launch the flask server using command:
+`flask run`
