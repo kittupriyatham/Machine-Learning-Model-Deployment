@@ -16,13 +16,13 @@ def predictandoutput():
     pw=request.form["pwidthin"]
     Result=MLC.predict(sl,sw,pl,pw)
     return render_template("index.html",Predicted_flower_name=Result[0][0],Accuracy_of_prediction=Result[1])
-<<<<<<< HEAD
+# <<<<<<< HEAD
 
 @app.route('/dashboard')
 def dashboard():
     return render_template("dashboard.html")
 
-=======
->>>>>>> 43265125815ec693d752ffe1c262f76aa06c1f34
+# =======
+# >>>>>>> 43265125815ec693d752ffe1c262f76aa06c1f34
 if __name__ == '__main__':
     app.run(debug=True)
