@@ -1,8 +1,8 @@
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.datasets import load_iris
 import numpy as np
 
-from sklearn.datasets import load_iris
 class MachineLearningCode:
     def __init__(self):
         self.iris = load_iris()
@@ -13,6 +13,7 @@ class MachineLearningCode:
         self.y_train=None
         self.y_test=None
         self.prediction=None
+
     def train(self):
         # Split our dataset into training and testing sets.
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.iris['data'], self.iris['target'], random_state=0)
