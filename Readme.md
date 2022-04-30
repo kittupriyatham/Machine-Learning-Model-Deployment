@@ -6,10 +6,14 @@ Hello everyone, this is a machine learning model deployment project where we hav
     We initially made this project as a requirement for an internship at Indian Servers. We are now making it open to contribution. 
     
     
-   ### Authors :
-   
+### Authors :
+    
     Tejaswi Talluru - Machine Learning Model.
-    Krishna Priyatham Potluri - flask web project and Azure deployment.
+    Krishna Priyatham Potluri - Flask Web Project and Azure Deployment.  (Myself)
+    
+### Contributors :
+
+    Busam Divya Prakash - Updated UI and added data visualization using tableau 
    
    ____________________________________________________
   
