@@ -30,6 +30,7 @@ Hello everyone, this is a machine learning model deployment project where we hav
 `flask run`
 
 ## Screenshots of deployed project
+### V1
 
 ![image](https://user-images.githubusercontent.com/5558263/131238779-ae486149-b8db-4589-9cbd-d32d701c1b7e.png)
 
@@ -37,5 +38,29 @@ Hello everyone, this is a machine learning model deployment project where we hav
 
 ![image](https://user-images.githubusercontent.com/5558263/131238809-20b07798-3d77-4c15-9e2f-8c021c23dab9.png)
 
+### V2
+
+![image](https://user-images.githubusercontent.com/5558263/166109023-41b411d2-3070-4230-a734-e81672a75c33.png)
+
+![image](https://user-images.githubusercontent.com/5558263/166109086-6dad22b0-d476-4a16-bee2-fa945dec21c2.png)
+
+![image](https://user-images.githubusercontent.com/5558263/166109105-e9c4b6ec-c4f6-4662-b5ae-66ca5be9781a.png)
+
+![image](https://user-images.githubusercontent.com/5558263/166109145-505ba81a-5cf2-412e-adca-bd7c3cd30be2.png)
+
+#### Credits to Divya Prakash Busam for the changed ui and added data visualization using tableau
+
 ## Steps to Deploy in Azure App Service
+
+### Method 1
+
+Using static deployment:
+
+To be updated soon...
+
+
+### Method 2
+
+Using Dynamic and CI/CD deployment:
+
 To be updated soon...
