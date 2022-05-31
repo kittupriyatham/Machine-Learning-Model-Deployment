@@ -9,15 +9,15 @@ MLC = MachineLearningCode()
 
 # routes definitions
 
-
 @app.route('/')
+@app.route('/home')
 def hello_world():
     MLC.train()
     return render_template("index.html", Predicted_flower_name="Predicted flower name",
                            Accuracy_of_prediction="Accuracy of prediction")
 
 
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predictandoutput():
     sl = request.form["slengthin"]
     sw = request.form["swidthin"]
