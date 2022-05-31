@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>IRIS Classification</title>
+    <style>
+  body {
+    font-family: 'Lato', sans-serif
+}
+
+h1 {
+    margin-bottom: 40px
+}
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+  </style>
+  </head>
+
+  <body style="background: #87ceeb">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/home">IRIS-C</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/home">Home</a>
+      <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+      <a class="nav-item nav-link" href="/about">About</a>
+        <a class="nav-item nav-link" href="https://potlurikrishnapriyatham.azurewebsites.net/projects">Back to Portfolio</a>
+
+    </div>
+  </div>
+</nav>
+   <div class="container"> <div class=" text-center mt-5 ">
+        <h2>IRIS Classification</h2>
+    </div>
+    <div class="row ">
+        <div class="col-lg-7 mx-auto">
+            <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+                    <div class="container">
+                      <p>Predicted Value and its accuracy are:</p>
+                       <p id="result">{{ Predicted_flower_name }}, {{ Accuracy_of_prediction }}</p>
+                    </div>
+                </div>
+            </div> <!-- /.8 -->
+        </div> <!-- /.row-->
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Classification</title>
+</head>
+
+<body style="background: #bf5b4b">
+<div align="center" style="background-color: #edb386 ;text-align: center;padding: 15px;position: absolute;top: 20%;left: 33%;bottom: 20%;right: 33%">
+<h1>Iris Classification</h1>
+    <h4>using Machine Learning, Flask and Azure</h4>
+    <form action="#" method="post">
+    <p id="slengthp">Sepal Length : <input id="slengthi" name="slengthin" type="text"></p>
+    <p id="swidthp">Sepal Width : <input id="swidthi" name="swidthin" type="text"></p>
+    <p id ="plengthp">Petal Length : <input id="plengthi" name="plengthin" type="text"></p>
+    <p id ="pwidthp">Petal Width : <input id="pwidthi" name="pwidthin" type="text"></p>
+    <p><input type="submit" value="Predict" ></p>
+    </form>
+    <p>Predicted Value and its accuracy are:</p>
+    <p id="result">{{ Predicted_flower_name }}, {{ Accuracy_of_prediction }}</p>
+</div>
+</body>
+</html> -->
