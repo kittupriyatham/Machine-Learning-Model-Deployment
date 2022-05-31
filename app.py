@@ -3,7 +3,7 @@ from MachineLearningCode import MachineLearningCode
 
 # apps initializations
 app = Flask(__name__)
-
+print("Flask app initialized")
 MLC = MachineLearningCode()
 
 
@@ -12,18 +12,22 @@ MLC = MachineLearningCode()
 @app.route('/')
 @app.route('/home')
 def hello_world():
-    MLC.train()
-    return render_template("index.html", Predicted_flower_name="Predicted flower name",
-                           Accuracy_of_prediction="Accuracy of prediction")
+    print("Hello World!")
+    return render_template("index.html")
 
 
 @app.route('/predict', methods=['POST'])
 def predictandoutput():
+    print("Inside predictandoutput function")
+    MLC.train()
     sl = request.form["slengthin"]
     sw = request.form["swidthin"]
     pl = request.form["plengthin"]
     pw = request.form["pwidthin"]
+    print(sl, sw, pl, pw, type(eval(sl)), type(eval(sw)), type(eval(pl)), type(eval(pw)))
+    sl, sw, pl, pw = eval(sl), eval(sw), eval(pl), eval(pw)
     Result = MLC.predict(sl, sw, pl, pw)
+    print(Result)
     return render_template("result.html", Predicted_flower_name=Result[0][0], Accuracy_of_prediction=Result[1])
 
 
