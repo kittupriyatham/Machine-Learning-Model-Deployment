@@ -26,9 +26,9 @@ def predictandoutput():
     pw = request.form["pwidthin"]
     print(sl, sw, pl, pw, type(eval(sl)), type(eval(sw)), type(eval(pl)), type(eval(pw)))
     sl, sw, pl, pw = eval(sl), eval(sw), eval(pl), eval(pw)
-    Result = MLC.predict(sl, sw, pl, pw)
-    print(Result)
-    return render_template("result.html", Predicted_flower_name=Result[0][0], Accuracy_of_prediction=Result[1])
+    result = MLC.predict(sl, sw, pl, pw)
+    print(result)
+    return render_template("result.html", Predicted_flower_name=result[0][0], Accuracy_of_prediction=result[1])
 
 
 @app.route('/dashboard')

@@ -19,8 +19,8 @@ class MachineLearningCode:
     def train(self):
         print("in train function")
         # Split our dataset into training and testing sets.
-        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.iris['data'], self.iris['target'],
-                                                                                random_state=0)
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
+            self.iris['data'], self.iris['target'], random_state=0)
         print("Splitting data into training and testing sets")
         self.knn = KNeighborsClassifier(n_neighbors=1)
         print("model intialization")
@@ -39,4 +39,5 @@ class MachineLearningCode:
         print("Predicted flower name: ", self.iris['target_names'][self.prediction[0]])
         print("Accuracy of prediction: ", self.knn.score(self.X_test, self.y_test))
         # print(self.prediction)
-        return [(self.iris['target_names'][self.prediction]), (self.knn.score(self.X_test, self.y_test))]
+        return [(self.iris['target_names'][self.prediction]), (self.knn.score(
+            self.X_test, self.y_test))]
