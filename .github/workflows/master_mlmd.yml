@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'MLMD'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DA0DB2ED3BC94D9BB66283D4FDA30306 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_83D58356E90C43B89727E6098EF0A0DE }}
