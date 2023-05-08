@@ -1,3 +1,7 @@
+"""
+docstring
+"""
+
 from flask import Flask, render_template, request
 from MachineLearningCode import MachineLearningCode
 
@@ -12,36 +16,48 @@ MLC = MachineLearningCode()
 @app.route('/')
 @app.route('/home')
 def hello_world():
+    """
+    docstring
+    """
     print("Hello World!")
     return render_template("index.html")
 
 
 @app.route('/predict', methods=['POST'])
 def predictandoutput():
+    """
+    docstring
+    """
     print("Inside predictandoutput function")
     MLC.train()
-    sl = request.form["slengthin"]
-    sw = request.form["swidthin"]
-    pl = request.form["plengthin"]
-    pw = request.form["pwidthin"]
-    print(sl, sw, pl, pw, type(eval(sl)), type(eval(sw)), type(eval(pl)), type(eval(pw)))
-    sl, sw, pl, pw = eval(sl), eval(sw), eval(pl), eval(pw)
-    result = MLC.predict(sl, sw, pl, pw)
-    print(result)
-    return render_template("result.html", Predicted_flower_name=result[0][0], Accuracy_of_prediction=result[1])
+    sepal_length = request.form["slengthin"]
+    sepal_width = request.form["swidthin"]
+    petal_length = request.form["plengthin"]
+    petal_width = request.form["pwidthin"]
+    sepal_length, sepal_width, petal_length, petal_width = ( float(sepal_length),
+    float(sepal_width), float(petal_length), float(petal_width))
+    result = MLC.predict(sepal_length, sepal_width, petal_length, petal_width)
+    return render_template("result.html", Predicted_flower_name=result[0][0],
+                           Accuracy_of_prediction=int(result[1]*100))
 
 
 @app.route('/dashboard')
 def dashboard():
+    """
+    docstring
+    """
     return render_template("dashboard.html")
 
 
 @app.route('/about')
 def about():
+    """
+    docstring
+    """
     return render_template("about.html")
 
 
 # app run
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True)
