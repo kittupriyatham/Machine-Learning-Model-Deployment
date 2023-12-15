@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon"  href="../static/images/logo.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>IRIS Classification</title>
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      label {
+        color: #333;
+      }
+
+      .btn-send {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        width: 80%;
+        margin-left: 3px;
+      }
+
+      .btn-predict {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        width: 80%;
+        margin-left: 3px;
+        margin-bottom: 20px;
+      }
+
+      .help-block.with-errors {
+        color: #ff5050;
+        margin-top: 5px;
+      }
+
+      .card {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .iris-image {
+        max-width: 80%; /* Adjusted the max-width for the image */
+        height: auto;
+        margin-bottom: 20px; /* Increased margin at the bottom of the image */
+      }
+
+      /* Added styles for increased spacing between headings */
+      h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body style="background: #87ceeb">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/home">IRIS-C</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/home">Home</a>
+          <a class="nav-item nav-link" href="/prediction">Prediction</a>
+          <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+          <a class="nav-item nav-link" href="https://potluri-krishna-priyatham.azurewebsites.net/projects">Portfolio</a>
+          <a class="nav-item nav-link" href="https://github.com/kittupriyatham/Machine-Learning-Model-Deployment" target="_blank">Repository</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class=" text-center mt-5 ">
+            <h2>IRIS Classification</h2>
+            <p>Discover the fascinating world of iris flowers with our IRIS-C web application. Using cutting-edge machine learning models, this platform empowers you to predict the species of iris flowers based on their sepal and petal characteristics.</p>
+            <img src="static/images/iries.jpeg" alt="Iris Image" class="iris-image">
+            <h4>About IRIS Data</h4>
+            <p>The predictive magic begins with a dataset containing four features: sepal length, sepal width, petal length, and petal width. These measurements provide crucial insights into the unique attributes of iris flowers, forming the foundation for our machine learning algorithms.</p>
+            <h4>Classes of Iris Flowers</h4>
+            <p>Our models are trained to classify iris flowers into three distinct classes:</p>
+            <ol>
+                <li><strong>Setosa:</strong> Known for its distinctive appearance, the Setosa iris is characterized by its smaller size and unique petal shape.</li>
+                <li><strong>Versicolor:</strong> With moderate sepal and petal dimensions, the Versicolor iris displays a captivating blend of colors.</li>
+                <li><strong>Virginica:</strong> The Virginica iris, the largest of the three, boasts elongated sepals and petals, setting it apart with elegance.</li>
+            </ol>
+            <p>Ready to predict which species your iris flower belong to? Click below to start predicting!.</p>
+            <button class="btn btn-primary btn-predict" onclick="window.location.href='/prediction'">Let's Predict</button>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

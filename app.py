@@ -20,10 +20,10 @@ def hello_world():
     docstring
     """
     print("Hello World!")
-    return render_template("index.html")
+    return render_template("home.html")
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET','POST'])
 def predictandoutput():
     """
     docstring
@@ -55,6 +55,13 @@ def about():
     docstring
     """
     return render_template("about.html")
+
+@app.route('/prediction')
+def prediction():
+    """
+    docstring
+    """
+    return render_template("index.html")
 
 
 # app run
