@@ -13,7 +13,8 @@ Hello everyone, this is a machine learning model deployment project where we hav
     
 ### Contributors :
 
-    Busam Divya Prakash - Updated UI and added data visualization using tableau 
+    Busam Divya Prakash - Updated UI and added data visualization using tableau.
+    Rishabh Chauhan - Changed home page and shifted previous home page to prediction page.
    
    ____________________________________________________
   
@@ -70,7 +71,18 @@ Hello everyone, this is a machine learning model deployment project where we hav
 
 ![image](https://user-images.githubusercontent.com/5558263/166109145-505ba81a-5cf2-412e-adca-bd7c3cd30be2.png)
 
-#### Credits to Divya Prakash Busam for the changed ui and added data visualization using tableau
+### V3
+
+![image](static/images/image.png)
+
+![image](static/images/image-1.png)
+
+![image](static/images/image-2.png)
+
+![image](static/images/image-3.png)
+
+![image](static/images/image-4.png)
+
 
 ## Steps to Deploy in Azure App Service
 
