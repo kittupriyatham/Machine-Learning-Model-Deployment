@@ -52,6 +52,10 @@ Hello everyone, this is a machine learning model deployment project where we hav
 
         python app.py
 
+## Repo Visualization
+
+![Visualization of the codebase](./diagram.svg)
+
 ## Screenshots of deployed project
 ### V1
 
