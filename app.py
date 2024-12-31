@@ -19,7 +19,7 @@ def hello_world():
     """
     docstring
     """
-    print("Hello World!")
+    # print("Hello World!")
     return render_template("home.html")
 
 

@@ -1,5 +1,10 @@
+This repository contains a README file sample for Daytona Samples and the MIT License.
+
+It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
+
+Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
+
 # Machine Learning Model Deployment
-## Iris Classification
 
 Hello everyone, this is a machine learning model deployment project where we have presented the Iris classification model in an elegant basic minimal ui using flask web framework and deployed it in Azure cloud using Azure app service. 
     We initially made the notebook file, with model code and some data preperations (preprocessing). Then we have took some chunks of code and put the necessary in web project. Then we have deployed it into Azure app service. 
@@ -8,7 +13,7 @@ Hello everyone, this is a machine learning model deployment project where we hav
     
 ### Authors :
     
-    Tejaswi Talluru - Machine Learning Model.
+    Tejaswi Talluru - Machine Learning Model in jupyter notebook.
     Krishna Priyatham Potluri - Flask Web Project and Azure Deployment.  (Myself)
     
 ### Contributors :
@@ -17,44 +22,28 @@ Hello everyone, this is a machine learning model deployment project where we hav
     Rishabh Chauhan - Changed home page and shifted previous home page to prediction page.
    
    ____________________________________________________
-  
-  ## Step by step guide to run, contribute, test in local machine.
 
-1. clone this repo into desired location in your system using command:
 
-        git clone https://github.com/kittupriyatham/Machine-Learning-Model-Deployment.git
- 
-2. Go to the project folder using command:
+## 🚀 Getting Started  
 
-        cd Machine-Learning-Model-Deployment
+### Open Using Daytona  
 
-3. Initialize local repository using command:
+1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
+2. **Create the Workspace**  
 
-        git init
+       daytona create https://github.com/kittupriyatham/Quira-Daytona-023
 
-4. create a python virtual environment using command:
-
-        python -m venv venv
-
-5. activate the virtual environment using command:
-
-        venv\Scripts\activate
-
-6.  Install the project dependancies using command:
-
-        pip install -r requirements.txt
-
-7. launch the flask server using command:
+3. launch the flask server using command:
 
         flask run
  
-8. if above command does not work to initiate app, use the following one:
+4. if above command does not work to initiate app, use the following one:
 
         python app.py
 
 ## Repo Visualization
 
-![Visualization of the codebase](./diagram.svg)
+![Visualization of the codebase](static/images/diagram.svg)
 
 ## Screenshots of deployed project
 ### V1
@@ -87,18 +76,22 @@ Hello everyone, this is a machine learning model deployment project where we hav
 
 ![image](static/images/image-4.png)
 
+### V4
+
+Changed background colour of dashboard to match other pages.
+
+![image](static/images/img.png)
+
+
+Note: Dashboard pages are zoomed out to 75%
 
 ## Steps to Deploy in Azure App Service
 
-### Method 1
-
-Using static deployment:
+### Using static deployment
 
 To be updated soon...
 
 
-### Method 2
-
-Using Dynamic and CI/CD deployment:
+### Using Dynamic and CI/CD deployment
 
 To be updated soon...
